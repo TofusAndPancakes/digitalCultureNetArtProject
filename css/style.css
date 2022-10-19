@@ -42,12 +42,35 @@
         float: left;
 
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
 }
 
 .gif_image img {
         width: 800px;
         height: auto;
+}
+
+.gif_image_cc {
+        width: 100%;
+        height: auto;
+        position: relative;
+        float: left;
+
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+}
+
+.gif_image_cc_padding {
+        width: 800px;
+        height: auto;
+        position: relative;
+}
+
+.gif_image_cc a img {
+        width: 88px;
+        height: auto;
+        float: right;
 }
 
 .artist_statement {
@@ -164,10 +187,19 @@
     .gif_image img {
         width: 600px;
     }
+
+    .gif_image_cc_padding {
+        width: 600px
+    }
 }
 
 @media (max-width: 768px){
     .gif_image img {
+        width: 80%;
+        margin: auto;
+    }
+
+    .gif_image_cc_padding {
         width: 80%;
         margin: auto;
     }
