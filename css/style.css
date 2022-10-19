@@ -1,0 +1,224 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+        width: Calc(100% - 30px);
+        height: auto;
+        position: relative;
+        float: left;
+
+        background-color: #404040;
+
+        padding: 10px 15px;
+        margin-bottom: 20px;
+
+        color: #ffffff;
+}
+
+.container {
+        width: 100%;
+        height: auto;
+        position: relative;
+        float: left;
+}
+
+.container_padding {
+        width: 1140px;
+        height: auto;
+        position: relative;
+        margin: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+.gif_image {
+        width: 100%;
+        height: auto;
+        position: relative;
+        float: left;
+
+        text-align: center;
+        margin-bottom: 20px;
+}
+
+.gif_image img {
+        width: 800px;
+        height: auto;
+}
+
+.artist_statement {
+        width: Calc(100% - 30px);
+        height: auto;
+        position: relative;
+        float: left;
+        margin-bottom: 20px;
+
+        padding: 0px 15px;
+}
+
+.artist_bio {
+        width: Calc(100% - 30px);
+        height: auto;
+        position: relative;
+        float: left;
+
+        padding: 0px 15px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 15px;
+        margin-bottom: 20px;
+}
+
+.artist_bio_title {
+        width: 100%;
+        height: auto;
+        position: relative;
+        float: left;
+
+        grid-column: span 3;
+}
+
+.artist_bio_profile {
+        width: 100%;
+        height: auto;
+        position: relative;
+
+        background-position: center;
+        background-size: cover;
+
+        border-radius: 5px;
+
+        grid-column: span 1;
+}
+
+.artist_bio_content {
+        width: 100%;
+        height: auto;
+        position: relative;
+
+        grid-column:  span 2 / span 3;
+}
+
+.artist_bio_link {
+        width: 100%;
+        height: auto;
+        position: relative;
+
+        background-color: #404040;
+        border-radius: 5px;
+
+        grid-column: span 3;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        padding-top: 5px;
+        margin-top: 20px;
+}
+
+.artist_bio_link_list {
+        background-color: #ffffff;
+        border-radius: 3px;
+
+        padding: 2.5px 7.5px;
+        margin: 0px 5px 5px;
+}
+
+.footer {
+        width: Calc(100% - 30px);
+        height: auto;
+        position: relative;
+        float: left;
+
+        background-color: #404040;
+
+        padding: 10px 15px;
+
+        color: #ffffff;
+
+        text-align: center;
+}
+
+/* Breakpoints */
+@media (max-width: 1400px){
+    .container_padding {
+        width: 980px;
+    }
+}
+
+@media (max-width: 1200px){
+    .container_padding {
+        width: Calc(100% - 30px);
+        padding: 15px;
+    }
+}
+
+@media (max-width: 992px){
+    .gif_image img {
+        width: 600px;
+    }
+}
+
+@media (max-width: 768px){
+    .gif_image img {
+        width: 80%;
+        margin: auto;
+    }
+
+    .artist_bio_profile {
+        display: none;
+    }
+    
+    .artist_bio_content {
+        grid-column: span 3;
+    }
+}
+
+@media (max-width: 375px){
+    .artist_bio_link {
+        display: none;
+    }
+}
+
+
+/* Fonts */
+.header h2 {
+        font-family: "Heebo", Arial, sans-serif;
+        font-size: 40px;
+        line-height: 1.2;
+        font-weight: bold;
+
+        margin: 0px;
+}
+
+@media (max-width: 375px){
+    .header h2 {
+        font-size: 24px;
+}
+}
+
+p {
+        font-family: "Raleway", Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.2;
+}
+
+.artist_bio_link p {
+        font-size: 14px;
+}
+
+h2 {
+        font-family: "Heebo", Arial, sans-serif;
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: bold;
+
+        margin-bottom: 20px;
+}
